@@ -1,91 +1,266 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Mulish;
-    font-style: normal;
-    color: #131318;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mulish;
+  font-style: normal;
+  color: #131318;
+}
+body{
+    /* min-width: 992px; */
+}
+/* ----header menubar----- */
+header {
+  width: 85%;
+  align-items: center;
+  margin: 52px auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
-header{
-    width: 85%;
+.logo img {
+  width: auto;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.logo span {
+  color: #ff5400;
+}
+
+.nav-menu {
+  margin: auto 0;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.nav-menu ul li:hover {
+  color: #ff5400;
+}
+
+nav i {
+  display: none;
+}
+
+/* ----banner----- */
+
+.banner {
+  height: 500px;
+  width: 85%;
+  align-items: center;
+  margin: 0 auto;
+  border: solid 2px rgba(255, 192, 203, 0);
+  border-radius: 16px;
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(Images/Group\ 13\ \(1\)\ \(1\).png);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  background-size: 100%;
+}
+
+.banner-text{
+    text-align: center;
     align-items: center;
-    margin: 52px auto;
+    margin-top: 106px;
+    margin-bottom: 40px;
+
 }
-nav{
-    display: flex;
-    justify-content: space-between;
+
+.banner-text h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    
 }
- .logo{
+
+.banner-text p{
+    color: white;
+    font-weight: 400;
+    width: 676px;
+    text-align: center;
+    margin: 16px auto;
+
+}
+
+.select-tours{
+    margin: 20px 450px;
+    height: 84px;
+    width: auto;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
-    font-size: 2rem;
-    font-weight: 800;
- }
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
 
- .logo img{
-    width: auto;
-    height: 56px;
-    flex-shrink: 0;
- }
+}
 
- .logo span{
-    color: #FF5400
- }
-
- .nav-menu{
-    margin: auto 0;
- }
-
- .nav-menu ul{
-    display: flex;
-    gap: 44px;
+.btn{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
     align-items: center;
-    list-style: none;
-    padding: 10px;
-    font-weight: 400;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Mulish;
+    font-weight: 700;
+    position: relative;
     cursor: pointer;
- }
+}
+.btn:hover{
+    color: blue;
+}
 
- .nav-menu ul li:hover{
-    color: #FF5400;
- }
+.btn::before{
+    content:url(Images/search-solid.svg);
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    position: absolute;
+    top:8px;
+    left: 22px;
+}
 
- nav i{
+.select-class input{
+    border-radius: 8px;
+    width: 174px;
+    color: rgba(19, 19, 24, 0.50);
+    
+}
+
+.select-class select{
+
+    border-radius: 8px;
+    width: 174px;
+    color: rgba(19, 19, 24, 0.50);
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: lightblue; */
+  }
+  header {
+    width: 90vw;
+    margin-bottom: 24px
+  }
+
+  
+  nav li {
     display: none;
- }
- 
+  }
 
- @media only screen and (max-width: 600px) {
-  /* body {
-    background-color: lightblue;
-  } */
-header{
-    width: 90%;
-}
-
-nav{
-    font-size: ;
-}
-nav li{
-    display: none;
-}
-
-nav i{
+  nav i {
     display: block;
     font-size: 2rem;
+  }
 
-}
-
-.logo{
+  .logo {
     font-size: 1.5rem;
-}
-.logo img{
-    width: auto;
+  }
+  .logo img {
+    /* width: auto; */
     height: 45px;
     flex-shrink: 0;
+  }
 
-}
+  /* ---banner--- */
+  .banner{
+     height: 550px;
+     max-width: 90vw;
+    width: 90vw;
+    align-items: center;
+    margin: 0 auto;
+    border: solid 2px rgba(255, 192, 203, 0);
+    border-radius: 16px;
+    background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(Images/Group\ 13\ \(1\)\ \(1\).png);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
+  }
+
+  .select-class{
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-text{
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 90%;
+  }
+
+  .banner-text h1{
+    font-size: 1.6rem;
+    margin-top: 10px;
+    padding: 0;
+  }
+  .banner-text p{
+    font-size: .9rem;
+    width: 85%;
+    margin: 12px auto 4px ;
+  }
+
+  .select-tours{
+    margin: 0;
+    height: fit-content;
+    width: 95%;
+  }
+
+  .select-tours input{
+    width: 100%;
+  }
+  .select-tours select{
+    width: 100%;
+  }
+  
+  .find-btn{
+    display: block;
+    width: 100%;
+  }
+  .select-tours .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    
+  }
+
+  .btn::before{
+    left: 60px;
+  }
 }
