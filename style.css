@@ -304,10 +304,85 @@ nav i {
     background-size: cover;
   }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  /* ----pick us---- */
+
+  .pick-us{
+    width: 85%;
+    align-items: center;
+    margin: 100px auto;
+  
   }
+
+  .pick-us-text{
+    text-align: center;
+    margin-bottom: 50px;
+
+  }
+
+  .pick-us-text h2{
+    margin-bottom: 40px;
+  }
+
+  .header h2{
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .pick-us-text p{
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .pick-us-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .pick-design{
+    width: 49%;
+    border: solid 2px red;
+    border-radius: 16px;
+    height: 284px;
+    padding: 20px;
+  }
+
+  .pick-us-cards img{
+    height: 64px;
+    width: 64px;
+    margin-bottom: 20px;
+  }
+
+  .pick-us-cards h3{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .pick-card1{
+   
+      border: 1px solid rgba(251, 181, 99, 0.20);
+      background: rgba(251, 181, 99, 0.05);
+  }
+
+  .pick-card2{
+    
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+  }
+
+  .pick-card3{
+
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);  
+  }
+  
+
+@media only screen and (max-width: 600px) {
+  /* body {
+    background-color: lightblue;
+  } */
   header .tours{
     width: 90vw;
     margin-bottom: 24px
@@ -432,7 +507,7 @@ nav i {
   .destination-img{
 
    grid-template-columns: 1fr;
-   grid-template-rows: repeat(8,300px) ;
+   grid-template-rows: repeat(7,300px) ;
 
   }
 
@@ -440,4 +515,26 @@ nav i {
     grid-column-start: 1;
     grid-column-end: 13;
   }
+
+  .destination-text {
+    margin-top: 0px;
+  }
   
+  .pick-design{
+    width: 95%;
+    border: solid 2px red;
+    border-radius: 16px;
+    height: 284px;
+    padding: 20px;
+  }
+
+  .pick-us-text p{
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .pick-us{
+    margin: 50px auto;
+  }
+
+}
