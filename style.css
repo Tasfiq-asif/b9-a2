@@ -555,6 +555,9 @@ nav i {
     margin: 0 auto;
   }
 
+  .deal-text h2{
+    margin: 24px 0;
+  }
   /* --deals-- */
 
   
@@ -673,6 +676,111 @@ nav i {
   background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat calc(100% - 10px) !important; 
   
 }
+
+.deal-text{
+  text-align: center;
+}
+
+.deals-container{
+  width: 85%;
+  height: 500px;
+  margin: 40px auto;
+  border: solid 2px pink;
+  background-image: url(Images/Group\ 39.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+  .deal-card{
+    width: 40%;
+    height:389px;
+    border-radius: 16px;
+   border: solid 2px pink;
+    margin-right: 50px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px )
+  }
+
+  .offer-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    
+    
+  }
+
+  .flex-text {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    height: 26px;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+    .flex-text p{
+      text-align: center;
+    
+  }
+
+  .deal-card h3{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+
+  .deal-card p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 70%;
+    margin-left: 30px;
+  }
+
+
+  .price h2{
+    font-size: 20px;
+    font-weight: 800;
+    color: #FF5400;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+
+  .btn-book{
+    width: 150px;
+    height: 52px;
+    margin-left: 30px;
+    
+  }
+
+
+.background2{
+    background-image: url(Images/Group\ 39.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .background2 .deal-card{
+    
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
 
 @media only screen and (max-width: 600px) {
   /* body {
@@ -919,7 +1027,66 @@ nav i {
   }
 
   .deal-text{
-    width: 100%;
+    max-width: 90vw;
+    width: 90vw;
+    margin: 0;
+    padding:0
   }
 
-  
+  .deal-text p{
+    margin: 20px auto;
+    font-size: 14px;
+  }
+
+ 
+
+  .deals-container{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .deal-card{
+    width: 90%;
+    height: 297px;
+    align-items: flex-end;
+    margin: 0 auto;
+    margin-top: 180px;   
+  }
+
+
+
+  .btn-book{
+    width: 130px;
+    height: 40px;
+    margin-top: 12px;
+    margin-left: 0;
+  }
+
+.deal-card h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .deal-card p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .offer-text{
+    margin-top: 0;
+  }
+
+  .price h2{
+    font-size: 16px;
+    font-weight: 800;
+    color: #FF5400;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
