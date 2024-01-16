@@ -555,6 +555,114 @@ nav i {
     margin: 0 auto;
   }
 
+  /* --deals-- */
+
+  
+  
+  
+  /* .Deals{
+    width: 85%p;
+    margin: 0 auto;
+  }
+  
+  .deal-text{
+    margin: 20px auto;
+    text-align: center;
+    width: 90%;
+  }
+   
+  .deal-text h2{
+    margin: 24px 0;
+  }
+  
+  .deals-container{
+    width: 100%;
+    align-items: flex-end;
+    margin: 30px auto;
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  
+
+ 
+
+  .deal-card{
+    width: 40%;
+    height:389px;
+    border-radius: 16px;
+   
+    margin-right: 50px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px )
+  }
+
+  .offer-text{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .flex-text{
+    display: flex;
+    margin: 30px auto;
+    align-items: center;
+  }
+
+  .flex-text img{
+    width: 24px;
+    height: 24px;
+  }
+  .flex-text p{
+    font-size: 16px;
+  }
+
+  .background1{
+    background-image: url(Images/Group\ 39.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .background2{
+    background-image: url(Images/Group\ 39.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .background2 .deal-card{
+    
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+
+  .deal-card h3{
+    font-size: 24px;
+    margin: 10px 30px;
+    font-weight: 800;
+  }
+
+  .deal-card p{
+    margin: 10px 30px;
+  }
+
+  .price h2{
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 30px 30px;
+  }
+
+  .deal-card > button{
+    margin: 0 30px;
+   */
+
 
 @media only screen and (max-width: 600px) {
   /* body {
@@ -648,6 +756,7 @@ nav i {
 
   .select-tours input{
     width: 100%;
+    padding: 24px;
   }
   .select-tours select{
     width: 100%;
@@ -793,4 +902,13 @@ nav i {
     width: 100%;
     text-align: center;
   }
-}
+
+  .Deals{
+    width: 85%;
+  }
+
+  .deal-text{
+    width: 100%;
+  }
+
+  
