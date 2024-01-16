@@ -6,10 +6,10 @@
   font-style: normal;
   color: #131318;
 }
-body{
-    /* min-width: 992px; */
-}
-/* ----header menubar----- */
+/* body{
+    
+} */
+----header menubar-----
 header {
   width: 85%;
   align-items: center;
@@ -161,12 +161,154 @@ nav i {
     color: rgba(19, 19, 24, 0.50);
 }
 
+ /* -----Popular Tours---- */
+
+ .tours{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+    margin: 100px auto;
+    
+ }
+
+ .header h1{
+    font-size: 3rem;
+    font-weight: 800;
+ }
+
+ .header p{
+    font-weight: 400;
+ }
+
+ .tour-text p{
+    width: 730px;
+    padding: 24px 0;
+    margin-bottom: 5px;
+ }
+
+ .tour-text ul li{
+    margin-left: 30px;
+ }
+
+ .btn::before{
+    display: none;
+ }
+
+  /* -----Choose your Destination-----  */
+
+  .destination-section{
+    width: 85%;
+    align-items: center;
+    
+    margin: 0 auto;
+  }
+
+  .destination {
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .destination-text {
+    margin-top: 190px;
+  }
+
+  .destination-text p{
+    margin: 50px 0 100px;
+  }
+  .destination-img{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(3, 300px); 
+    gap: 16px;
+    margin: 20px auto;
+   
+    
+    
+  }
+
+  .item{
+    border-radius: 16px;
+    text-align: center;
+    padding: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .item h5{
+    color: white;
+  }
+  .item-1{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(Images/Rectangle\ 5.png), lightgray 50% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+  .item-2{
+    grid-column-start: 7;
+    grid-column-end: 13;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(Images/Rectangle\ 8.png), lightgray 50% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  .item-3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(Images/Rectangle\ 6.png), lightgray 50% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+  }
+  .item-4{
+    grid-column-start: 4;
+    grid-column-end: 11;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(Images/Rectangle\ 7.png), lightgray 50% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain; 
+  }
+
+  .item-5{
+    grid-column-start: 11;
+    grid-column-end: 13;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(Images/Rectangle\ 9.png), lightgray 50% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .item-6{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(Images/Rectangle\ 11.png), lightgray 50% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .item-7{
+    grid-column-start: 6;
+    grid-column-end: 13;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(Images/Rectangle\ 10.png), lightgray 50% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 @media only screen and (max-width: 600px) {
   body {
-    /* background-color: lightblue; */
+    background-color: lightblue;
   }
-  header {
+  header .tours{
     width: 90vw;
     margin-bottom: 24px
   }
@@ -188,6 +330,10 @@ nav i {
     /* width: auto; */
     height: 45px;
     flex-shrink: 0;
+  }
+
+  .logo h2{
+    font-size: 1.6rem;
   }
 
   /* ---banner--- */
@@ -263,4 +409,35 @@ nav i {
   .btn::before{
     left: 60px;
   }
-}
+  .tours{
+    flex-direction: column;
+  }
+  .tour-text{
+    width: 100%;
+  }
+  .tour-text p{
+    width: 100%;
+  }
+  .tour-text .tour-img{
+    width: 100%;
+  }
+
+  .tour-img img{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* -----Choose your Destination-----  */
+
+  .destination-img{
+
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(8,300px) ;
+
+  }
+
+  .item{
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  
