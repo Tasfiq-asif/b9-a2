@@ -139,14 +139,17 @@ nav i {
     text-align: center;
     font-family: Mulish;
     font-weight: 700;
-    position: relative;
+    /* position: relative; */
     cursor: pointer;
+}
+.btn-gen{
+  position: relative;
 }
 .btn:hover{
     color: blue;
 }
 
-.btn::before{
+.btn-gen::before{
     content:url(Images/search-solid.svg);
     width: 20px;
     height: 20px;
@@ -201,7 +204,7 @@ nav i {
  }
 
  .btn::before{
-    display: none;
+    /* display: none; */
  }
 
   /* -----Choose your Destination-----  */
