@@ -9,7 +9,7 @@
 /* body{
     
 } */
-----header menubar-----
+/* ----header menubar----- */
 header {
   width: 85%;
   align-items: center;
@@ -18,6 +18,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .logo {
   display: flex;
@@ -79,6 +80,7 @@ nav i {
   object-fit: cover;
   background-position: center;
   background-size: 100%;
+  margin-top: 40px;
 }
 
 .banner-text{
@@ -118,6 +120,13 @@ nav i {
     background: rgba(255, 255, 255, 0.30);
 
 }
+
+
+.select-class{
+  padding-top: 60px;
+  align-items: center;
+}
+
 
 .btn{
     width: 174px;
@@ -377,7 +386,88 @@ nav i {
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);  
   }
+
+  /* ---news-letter--- */
+
+  .news-letter{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 422px;
+  }
+
+  .news-letter-text{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+  }
+
+  .news-letter-text h5{
+    font-size: 24px;
+    font-weight: 800
+  }
+.news-letter-text p{
+    color: #5A5A5D;
+  }
+  .news-letter-text input{
+    width: 100%;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    height: 52px;
+    border: none;
+    padding: 20px;
+    color: rgba(19, 19, 24, 0.30);
+  }
+
+  .news-letter-text button{
+    width: 100%;
+  }
+
+  .news-letter-text hr{
+    background: rgba(19, 19, 24, 0.10);
+  }
+
+  .news-letter-img {
+    width: 48%;
+    position: relative;
+  }
+
+
+
+  .news-box{
+    height: 120px;
+    width: 324px;
+    background-color: #FF5400;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 11%;
+    left: 43%;
+    transform: rotate(-19.628deg);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   
+  .news-box h3{
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+
+  }
+
+  .news-box p{
+    color: white;
+    padding: 5px;
+    
+
+  }
 
 @media only screen and (max-width: 600px) {
   /* body {
@@ -436,6 +526,12 @@ nav i {
 
   }
 
+  .header h2{
+    font-size: 22px;
+  }
+  .header h1{
+    font-size: 22px;
+  }
   .select-class{
     flex-direction: column;
     align-items: center;
@@ -484,7 +580,7 @@ nav i {
   .btn::before{
     left: 60px;
   }
-  .tours{
+ .news-letter, .tours{
     flex-direction: column;
   }
   .tour-text{
@@ -519,6 +615,10 @@ nav i {
   .destination-text {
     margin-top: 0px;
   }
+
+  .destination-text p {
+    margin: 24px auto;
+  }
   
   .pick-design{
     width: 95%;
@@ -537,4 +637,26 @@ nav i {
     margin: 50px auto;
   }
 
+  .news-letter-text,.news-letter-img{
+    width: 100%;
+  }
+
+  .news-letter-img img{
+    width: 100%;
+  }
+  .news-box{
+    width: 50%;
+    bottom: 42px;
+  }
+  .news-box h1{
+    font-size: 21px;
+  }
+
+  .news-letter-text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
 }
