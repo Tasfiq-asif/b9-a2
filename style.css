@@ -77,9 +77,8 @@ nav i {
     url(Images/Group\ 13\ \(1\)\ \(1\).png);
   background-repeat: no-repeat; 
   background-size: cover;
-  object-fit: cover;
-  background-position: center;
-  background-size: 100%;
+  /* background-position: center;
+  background-size: contain; */
   margin-top: 40px;
 }
 
@@ -108,9 +107,9 @@ nav i {
 }
 
 .select-tours{
-    margin: 20px 450px;
+    margin: 20px auto;
     height: 84px;
-    width: auto;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +138,6 @@ nav i {
     text-align: center;
     font-family: Mulish;
     font-weight: 700;
-    /* position: relative; */
     cursor: pointer;
 }
 .btn-gen{
@@ -161,7 +159,7 @@ nav i {
 
 .select-class input{
     border-radius: 8px;
-    width: 174px;
+    width: 35%;
     color: rgba(19, 19, 24, 0.50);
     
 }
@@ -169,7 +167,7 @@ nav i {
 .select-class select{
 
     border-radius: 8px;
-    width: 174px;
+    width: 35%;
     color: rgba(19, 19, 24, 0.50);
 }
 
@@ -177,12 +175,26 @@ nav i {
 
  .tours{
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between;
     width: 85%;
     align-items: center;
     margin: 100px auto;
     
+    
  }
+
+ .tour-text{
+  width: 50%;
+  text-align: start;
+ 
+
+ }
+
+ 
+
+
 
  .header h1{
     font-size: 3rem;
@@ -194,7 +206,7 @@ nav i {
  }
 
  .tour-text p{
-    width: 730px;
+    width: 100%;
     padding: 24px 0;
     margin-bottom: 5px;
  }
@@ -517,6 +529,10 @@ nav i {
     margin: 20px 0;
     background: rgba(19, 19, 24, 0.10);
   }
+
+  .footer-text p{
+    padding: 0 20px;
+  }
   
   .extra {
     width: 85%;
@@ -541,7 +557,7 @@ nav i {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   .ex-img-container img{
@@ -562,112 +578,6 @@ nav i {
     margin: 24px 0;
   }
   /* --deals-- */
-
-  
-  
-  
-  /* .Deals{
-    width: 85%p;
-    margin: 0 auto;
-  }
-  
-  .deal-text{
-    margin: 20px auto;
-    text-align: center;
-    width: 90%;
-  }
-   
-  .deal-text h2{
-    margin: 24px 0;
-  }
-  
-  .deals-container{
-    width: 100%;
-    align-items: flex-end;
-    margin: 30px auto;
-    height: 500px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-
-  
-
- 
-
-  .deal-card{
-    width: 40%;
-    height:389px;
-    border-radius: 16px;
-   
-    margin-right: 50px;
-    padding: 16px;
-    background: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(2.5px )
-  }
-
-  .offer-text{
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .flex-text{
-    display: flex;
-    margin: 30px auto;
-    align-items: center;
-  }
-
-  .flex-text img{
-    width: 24px;
-    height: 24px;
-  }
-  .flex-text p{
-    font-size: 16px;
-  }
-
-  .background1{
-    background-image: url(Images/Group\ 39.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .background2{
-    background-image: url(Images/Group\ 39.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-
-  .background2 .deal-card{
-    
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-
-
-  .deal-card h3{
-    font-size: 24px;
-    margin: 10px 30px;
-    font-weight: 800;
-  }
-
-  .deal-card p{
-    margin: 10px 30px;
-  }
-
-  .price h2{
-    color: #FF5400;
-    font-size: 20px;
-    font-weight: 800;
-    margin: 30px 30px;
-  }
-
-  .deal-card > button{
-    margin: 0 30px;
-   */
 
 
   SELECT {
@@ -736,16 +646,16 @@ nav i {
   }
 
   .deal-card h3{
-    font-size: 24px;
+    font-size: 2vw;
     font-weight: 800;
     margin-bottom: 5px;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-bottom: 20px;
     margin-left: 30px;
   }
 
   .deal-card p{
-    font-size: 16px;
+    font-size: 1vw;
     font-weight: 400;
     margin-bottom: 20px;
     align-items: center;
@@ -784,11 +694,78 @@ nav i {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
+/* 
+  .get-lost{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+  }
+
+  .get-lost-text {
+    width: 50%;
+    text-align: start;
+    padding: 20px;
+   
+  }
+
+  .get-lost p{
+    font-size: 16px;
+    color: #5A5A5D;
+    margin: 20px 0;
+  }
+
+  .get-lost-text h1{
+    font-size: 40px;
+    margin: 20px 0;
+  }
+
+  .get-lost-text li{
+    margin: 20px 20px 30px;
+  }
+
+  .get-lost-text > button{
+    margin-top: 20px;
+  }
+
+  .get-lost-img{
+    width: 50%;
+  
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(Images/Rectangle\ 8.png), lightgray 50% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 30px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 8px pink;
+  }
+
+  .get-lost-img h5{
+    color: white !important;
+    font-size: medium;
+    width: 175px;
+    text-align: center;
+  } */
+.news-box{
+    width: 40%;
+    height: 25%;
+    bottom: 14%;
+    left: 55%;
+  }
+  .news-box h3{
+    font-size: 2vw;
+  }
+.news-box p{
+    font-size: 1vw;
+  }
 
 @media only screen and (max-width: 600px) {
-  /* body {
-    background-color: lightblue;
-  } */
+  
   header .tours{
     width: 90vw;
     margin-bottom: 24px
@@ -832,13 +809,13 @@ nav i {
       rgba(19, 19, 24, 0) 100%
     ),
     url(Images/Group\ 13\ \(1\)\ \(1\).png);
-  background-repeat: no-repeat; 
-  background-size: cover;
-  object-fit: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
   }
 
@@ -940,7 +917,6 @@ nav i {
   
   .pick-design{
     width: 95%;
-    border: solid 2px red;
     border-radius: 16px;
     height: 284px;
     padding: 20px;
@@ -966,11 +942,16 @@ nav i {
   .news-box{
     width: 53%;
     height: 30%;
-    bottom: 42px;
-    left: 150px;
+    bottom: 14%;
+    left: 45%;
   }
   .news-box h3{
-    font-size: 22px;
+    font-size: 4vw;
+  }
+
+
+  .news-box p{
+    font-size: 2vw;
   }
 
   .news-letter-text{
@@ -1074,7 +1055,7 @@ nav i {
   }
 
   .deal-card p{
-    font-size: 16px;
+    font-size: .75rem;
     font-weight: 400;
     margin-bottom: 20px;
     align-items: center;
@@ -1093,3 +1074,37 @@ nav i {
     margin-bottom: 0;
     margin-left: 0;
   }
+
+  /* .get-lost{
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+    height: 800px;
+
+  } */
+
+  /* .get-lost-text{
+    width: 100%;
+    padding: 5px;
+  }
+
+  .get-lost p{
+    margin: 10px 0;
+  }
+
+  .get-lost-text h1{
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .get-lost-text li{
+    margin: 5px 15px 10px;
+  }
+
+  .get-lost-text > button{
+    margin-top: 5px;
+  } */
+
+   
+
+
